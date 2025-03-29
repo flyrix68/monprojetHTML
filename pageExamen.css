@@ -1,0 +1,465 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}nav {
+    background-color: #261e96; /* Couleur bleue moderne */
+    padding: 12px 30px;
+    border-bottom: 2px solid #005bb5; 
+}
+.resize_image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /*  pour un effet arrondi */
+}
+.image li a {
+    display: flex;
+    align-items: center;
+    padding: 10px; 
+    transition: background-color 4s ease; /* Animation fluide */
+}
+
+.image li a:hover {
+    background-color: #005bb5; /* Couleur de fond au survol */
+}
+.image li a::after{
+   content: "";
+   margin-left: 8px;
+   transition: transform 4s ease;
+}
+.main_menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.main_menu > li {
+    position: relative;
+    padding: 15px 20px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 4s ease;
+}
+
+.main_menu > li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Ajout d'un effet d'arrow plus moderne */
+.main_menu > li::after {
+    content: "▼";
+    font-size: 14px;
+    margin-left: 8px;
+    transition: transform 4s ease;
+}
+.sub_menu > li::after {
+    content: "▼";
+    font-size: 14px;
+    margin-left: 8px;
+    transition: transform 4s ease;
+}
+
+/* Style des sous-menus */
+.sub_menu, .sub_sub_menu {
+    display: none;
+    position: absolute;
+    background-color: #f5f5f5; /* Couleur de fond claire */
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    min-width: 200px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Ombre pour donner du relief */
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Position des sous-menus */
+.sub_menu {
+    top: 100%;
+    left: 0;
+}
+
+.sub_sub_menu {
+    top: 0;
+    left: 100%;
+}
+
+
+/* Style des éléments des sous-menus */
+.sub_menu li, .sub_sub_menu li {
+    padding: 12px 20px;
+    color: #333;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 4s ease;
+}
+
+/* Liens dans les sous-menus */
+.sub_menu li a, .sub_sub_menu li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+/* Effet de survol pour les sous-menus */
+.sub_menu li:hover, .sub_sub_menu li:hover {
+    background-color: #1a73e8;
+    color: white;
+}
+
+/* Afficher les sous-menus au survol avec animation fluide */
+.main_menu > li:hover > .sub_menu,
+.sub_menu > li:hover > .sub_sub_menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Survol de l'élément principal */
+.main_menu > li:hover {
+    background-color: #005bb5;
+    color: white;
+}
+
+
+/* Animation pour la sous-couche menu */
+.sub_menu li a:hover, .sub_sub_menu li a:hover {
+    background-color: white;
+    color: #005bb5;
+    font-weight: bold;
+
+}
+
+#formulaire{
+    background: linear-gradient(to bottom ,rgba(0,0,0,100),rgba(0,0,0,0));
+}
+
+/* Style de base pour le formulaire */
+#ajouterSujetForm {
+    /* background-color: #f9f9f9; */
+    background:rgba(0, 0, 0, 0.1);
+    display: none;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* Style des labels */
+#ajouterSujetForm label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color:#fff;
+}
+
+/* Style des champs de saisie */
+#ajouterSujetForm input[type="text"],
+#ajouterSujetForm select,
+#ajouterSujetForm input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Style du bouton de soumission */
+#ajouterSujetForm button[type="submit"] {
+    background-color: #4CAF50; /* Vert */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+#ajouterSujetForm button[type="submit"]:hover {
+    background-color: #45a049; /* Vert plus foncé au survol */
+}
+
+/* Style pour le bouton "Ajouter un sujet" */
+#ajouterSujetbtn {
+    background-color: #007BFF; /* Bleu */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px;
+}
+
+#ajouterSujetBtn:hover {
+    background-color: #0056b3; /* Bleu plus foncé au survol */
+}
+
+/* Style pour les messages d'erreur ou de succès */
+#ajouterSujetForm .message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#ajouterSujetForm .message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+#ajouterSujetForm .message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+
+main{
+    background-image:linear-gradient(to bottom, rgba(0,0,0,0.7),rgba(0,0,0,0)), url("./ressource/bg3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    position: relative;
+    padding: 20px;
+
+}
+
+main div {
+    flex: 1; /* Prend l'espace restant à droite de l'aside */
+    margin-left: 10px; /* Espace entre l'aside et les sections */
+}
+
+
+aside{
+    position: sticky; /* Fixe l'aside à gauche lors du défilement */
+    top: 20px;/* Distance du haut pour l'aligner proprement */
+    width: 500px;/* largeur de l'aside */
+    background: #e8f0fe;    /* couleur de fond */
+    padding: 20px;  /* espace intérieur */
+    overflow-y: auto; /* barre de défilement verticale  */ 
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.7); /* ombre à gauche */
+    height: 100vh;
+    border-radius: 15px;
+
+}
+
+aside img{
+    height: auto;
+    width: 300px;
+    margin-left: 40px;
+}
+aside p{
+    font-size: 18px;
+}
+
+
+i{
+    font-size: 24px;
+    color: #0056b3; 
+    margin-right: 5px;
+  }
+
+  h2 {
+    color:greenyellow;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    /* #0056b3; */
+}
+
+h3 {
+    color: #000;
+}
+
+h5 {
+    color:#fff;
+    font-style: italic;
+    font-size: 24px;
+    padding: 10px;
+    /* #666; */
+}
+h6{
+    font-size: 16px;
+    color: red;
+    font-weight: 50px;
+    padding:5px;
+  }
+
+article {
+    background: #e8f0fe;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 20px rgba(255, 255, 255, 10);
+    margin-right: 25%;
+}
+/* #e8f0fe; */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: blue; 
+    font-weight: bold;
+    font-size: 18px;
+    /* #0056b3; */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ff6600;
+}
+.fas.fa-file-pdf {
+    color:blue;
+    margin: 5px;
+   
+}
+
+/* Style pour les sections de l'année 2022 */
+
+#L3_annee_2022 h2 {
+    opacity: 0;
+    animation: annime_entrant 4s ease-out forwards;
+}
+
+#annee_2023 h2 {
+    opacity: 0;
+    animation: annime_entrant 4s ease-out forwards;
+}
+
+#annee_2024 h2 {
+    opacity: 0;
+    animation: annime_entrant 4s ease-out forwards;
+}
+
+
+@keyframes annime_entrant {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* annime pour aside */
+
+.sidebar p {
+    opacity: 0;
+    animation: text_annime 5s ease-in-out forwards;
+}
+
+
+@keyframes text_annime {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+footer {
+    position:relative;
+    top: 0; /* Commence après le main */
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 150px;
+    z-index: 3;
+    background-color: #261e96;
+    width: 100%;
+    font-size: 20px;
+
+    /* rgb(13, 130, 232); */
+  }
+  #mail{
+    color:red;
+  }
+  footer p{
+    padding: 5px;
+  }
+  
+  .social_media {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+}
+    .social_media i {
+        transition: color 0.3s ease;
+        color: #fff; /* Couleur par défaut */
+
+    }
+    
+
+    .social_media i:hover {
+        color: #0056b3; /* Couleur au survol */
+        animation: bounce 1s infinite;
+    }
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-10px);
+        }
+        60% {
+            transform: translateY(-5px);
+        }
+    }
+    .copyright {
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        animation:  annime_ecriture 3s steps(30, end) infinite;
+    }
+    
+    @keyframes annime_ecriture {
+        0% {
+            width: 0;
+        }
+        50% {
+            width: 100%;
+        }
+        100% {
+            width: 0;
+        }
+    }
+
+
+  

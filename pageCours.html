@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pageCours</title>
+    <link rel="stylesheet" href="pageCours.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+    <script src="script.js" defer></script>
+    
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><img src="./ressource/logo-UFRMI1.png" alt="logo de l'UFR-MI"></div>
+        <!-- <div class="logo"><img src="./ressource/logo-ufhb.jpeg" alt="logo de l'UFHB"></div> -->
+        <nav>
+            <div>
+                <ul class="main_menu">
+                    <div  class="image">
+                        <li><a href="projet.html"><img src="./ressource/bouton_accueil.jpg" alt="boutton accueil" class="resize_image"></a></li> 
+                    </div>
+                    <li>Cours
+                        <ul class="sub_menu">
+                            <li>Niveau
+                                <ul class="sub_sub_menu">
+                                    <li> <a href="./pageCours.html">Licence 3</a></li>
+                                </ul> 
+                            </li>    
+                        </ul>
+                    </li>
+                    <li>Examens
+                        <ul class="sub_menu">
+                            <li id="s1">Niveau
+                                <ul class="sub_sub_menu">
+                                    <li><a href="./pageExamen.html">Licence 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Corrections d'examens
+                        <ul class="sub_menu">
+                            <li id="s1">Niveau
+                                <ul class="sub_sub_menu">
+                                    <li><a href="pageCorro.html">Licence 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <section id="formulaire">
+        <!-- Bouton pour afficher/masquer le formulaire -->
+        <button id="ajouterCoursbtn">Ajouter Cours</button>
+    
+        <!-- Formulaire pour ajouter des sujets (masqué par défaut) -->
+        <form id="ajouterCoursForm" >
+            <label for="anne">Année universitaire:</label>
+            <input type="text" id="anne" name="anne" required><br><br>
+    
+            <label for="semestre">Semestre:</label>
+            <select name="semestre" id="semestre" required>
+                <option value="1">Semestre 1</option>
+                <option value="2">Semestre 2</option>
+            </select>
+    
+            <label for="filiere">Filière:</label>
+            <select name="filiere" id="filiere" required>
+                <option value="1">Mathématique</option>
+                <option value="2">Science-informatique</option>
+                <option value="3">Mécanique</option>
+            </select>
+    
+            <label for="fichier">Fichier PDF:</label>
+            <input type="file" name="fichier" id="fichier" accept=".pdf" required>
+    
+            <button type="submit">Ajouter</button>
+        </form>
+    </section>
+    
+
+    <main>
+
+        <div>
+            <!-- Année 2022-2023 -->
+            <section id="L3_annee_2022">
+                <h2>Licence3 Année Universitaire 2022-2023</h2>
+                <h5>Archive cours filière Mathématique</h5>
+                
+                <!-- Semestre 1 -->
+                <article id="semestre1_2022">
+                    <h3>Semestre 1</h3>
+                    <ul>
+                        <li><a href="documents/2022/cours1.pdf" download="cours1.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 1</a></li>
+                        <li><a href="documents/2022/cours2.pdf" download="cours2.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 2</a></li>
+                        <li><a href="documents/2022/cours3.pdf" download="cours3.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 1</a></li>
+                        <li><a href="documents/2022/cours4.pdf" download="cours4.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 2</a></li>
+                    </ul>
+                </article>
+
+                <!-- Semestre 2 -->
+                <article id="semestre2_2022">
+                    <h3>Semestre 2</h3>
+                    <ul>
+                        <li><a href="documents/2022/cours3.pdf" download="cours3.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 3</a></li>
+                        <li><a href="documents/2022/cours4.pdf" download="cours4.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 4</a></li>
+                    </ul>
+                </article>
+
+                <h5>Archive cours filière Science-informatique</h5>
+                
+                <!-- Semestre 1 -->
+                <article id="semestre1_2022">
+                    <h3>Semestre 1</h3>
+                    <ul>
+                        <li><a href="documents/2022/cours1.pdf" download="cours1.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 1</a></li>
+                        <li><a href="documents/2022/cours2.pdf" download="cours2.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 2</a></li>
+                    </ul>
+                </article>
+
+                <!-- Semestre 2 -->
+                <article id="semestre2_2022">
+                    <h3>Semestre 2</h3>
+                    <ul>
+                        <li><a href="documents/2022/cours3.pdf" download="cours3.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 3</a></li>
+                        <li><a href="documents/2022/cours4.pdf" download="cours4.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 4</a></li>
+                    </ul>
+                </article>
+
+                <h5>Archive cours filière Mécanique</h5>
+                
+                <!-- Semestre 1 -->
+                <article id="semestre1_2022">
+                    <h3>Semestre 1</h3>
+                    <ul>
+                        <li><a href="documents/2022/cours1.pdf" download="cours1.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 1</a></li>
+                        <li><a href="documents/2022/cours2.pdf" download="cours2.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 2</a></li>
+                    </ul>
+                </article>
+
+                <!-- Semestre 2 -->
+                <article id="semestre2_2022">
+                    <h3>Semestre 2</h3>
+                    <ul>
+                        <li><a href="documents/2022/cours3.pdf" download="cours3.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 3</a></li>
+                        <li><a href="documents/2022/cours4.pdf" download="cours4.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 4</a></li>
+                    </ul>
+                </article>
+            </section>
+
+             <!-- Année 2023-2024 -->
+
+            <section id="annee_2023">
+                <h2>Année Universitaire 2023-2024</h2>
+                
+                <!-- Semestre 1 -->
+                <h5>Archive cours filière Mathématique</h5>
+                <article id="semestre1_2023">
+                    <h3>Semestre 1</h3>
+                    <ul>
+                        <li><a href="documents/2023/cours1.pdf" download="cours1.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 1</a></li>
+                        <li><a href="documents/2023/cours2.pdf" download="cours2.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 2</a></li>
+                    </ul>
+                </article>
+                
+                <!-- Semestre 2 -->
+                <article id="semestre2_2023">
+                    <h3>Semestre 2</h3>
+                    <ul>
+                        <li><a href="documents/2023/cours3.pdf" download="cours3.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 3</a></li>
+                        <li><a href="documents/2023/cours4.pdf" download="cours4.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 4</a></li>
+                    </ul>
+                </article>
+
+                <h5>Archive cours filière Science-informatique</h5>
+                <!-- Semestre 1 -->
+                <article id="semestre1_2023">
+                    <h3>Semestre 1</h3>
+                    <ul>
+                        <li><a href="documents/2023/cours1.pdf" download="cours1.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 1</a></li>
+                        <li><a href="documents/2023/cours2.pdf" download="cours2.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 2</a></li>
+                    </ul>
+                </article>
+
+                <!-- Semestre 2 -->
+                <article id="semestre2_2023">
+                    <h3>Semestre 2</h3>
+                    <ul>
+                        <li><a href="documents/2023/cours3.pdf" download="cours3.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 3</a></li>
+                        <li><a href="documents/2023/cours4.pdf" download="cours4.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 4</a></li>
+                    </ul>
+                </article>
+                <h5>Archive cours filière Mécanique</h5>
+                <!-- Semestre 1 -->
+                <article id="semestre1_2023">
+                    <h3>Semestre 1</h3>
+                    <ul>
+                        <li><a href="documents/2023/cours1.pdf" download="cours1.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 1</a></li>
+                        <li><a href="documents/2023/cours2.pdf" download="cours2.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 2</a></li>
+                    </ul>
+                </article>
+
+                <!-- Semestre 2 -->
+                <article id="semestre2_2023">
+                    <h3>Semestre 2</h3>
+                    <ul>
+                        <li><a href="documents/2023/cours3.pdf" download="cours3.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 3</a></li>
+                        <li><a href="documents/2023/cours4.pdf" download="cours4.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 4</a></li>
+                    </ul>
+                </article>
+
+             <!-- Année 2024-2025 -->
+            <section id="annee_2024">
+                <h2>Année Universitaire 2024-2025</h2>
+                <h5>Archive cours filière Mathématique</h5>
+                <!-- Semestre 1 -->
+                <article id="semestre1_2024">
+                    <h3>Semestre 1</h3>
+                    <ul>
+                        <li><a href="documents/2024/cours1.pdf" download="cours1.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 1</a></li>
+                        <li><a href="documents/2024/cours2.pdf" download="cours2.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 2</a></li>
+                    </ul>
+                </article>
+                
+                <!-- Semestre 2 -->
+                <article id="semestre2_2024">
+                    <h3>Semestre 2</h3>
+                    <ul>
+                        <li><a href="documents/2024/cours3.pdf" download="cours3.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 3</a></li>
+                        <li><a href="documents/2024/cours4.pdf" download="cours4.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 4</a></li>
+                    </ul>
+                </article>
+                <h5>Archive cours filière Science-informatique</h5>
+                <!-- Semestre 1 -->
+                <article id="semestre1_2024">
+                    <h3>Semestre 1</h3>
+                    <ul>
+                        <li><a href="./document/2024-2025/semestre1/reseau.zip" download="reseau.zip"><i class="fas fa-file-zip"></i> Télécharger le Cours des fondammenteaux des reseaux</a></li>
+                        <li><a href="./document/2024-2025/semestre1/algo_avancé.zip" download="algo_avancé.zip"><i class="fas fa-file-zip"></i> Télécharger le Cours d'Algorithme avancé </a></li>
+                        <li><a href="./document/2024-2025/semestre1/base_de_données.zip" download="base_de_données.zip"><i class="fas fa-file-zip"></i> Télécharger le Cours  des bases de données </a></li>
+                        <li><a href="./document/2024-2025/semestre1/CHAPITRE 1.pdf" download="CHAPITRE 1.pdf"><i class="fas fa-file-pdf"></i> Télécharger le Cours de Génie logiciel chapitre 1 </a></li>
+                        <li><a href="./document/2024-2025/semestre1/CHAPITRE 2.pdf" download="CHAPITRE 2.pdf"><i class="fas fa-file-pdf"></i> Télécharger le Cours de Génie logiciel chapitre 2 </a></li>
+                        <li><a href="./document/2024-2025/semestre1/Prog Linéaire L3 UFRMI 22.pdf" download="Prog Linéaire L3 UFRMI 22.pdf"><i class="fas fa-file-pdf"></i> Télécharger le Cours de RO: programme linéaire </a></li>
+                        <li><a href="./document/2024-2025/semestre1/Théorie des Graphes L3 UFRMI 2020.pdf" download="Théorie des Graphes L3 UFRMI 2020.pdf"><i class="fas fa-file-pdf"></i> Télécharger le Cours de RO: Théorie des graphes </a></li>
+        
+                    </ul>
+                </article>
+
+                <!-- Semestre 2 -->
+                <article id="semestre2_2024">
+                    <h3>Semestre 2</h3>
+                    <ul>
+                        <li><a href="./document/2024/CUSTOMTKINTER.pdf" download="CUSTOMTKINTER.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 3</a></li>
+                        <li><a href="documents/2024/cours4.pdf" download="cours4.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 4</a></li>
+                    </ul>
+                </article>
+                <h5>Archive cours filière Mécanique</h5>
+                <!-- Semestre 1 -->
+                <article id="semestre1_2024">
+                    <h3>Semestre 1</h3>
+                    <ul>
+                        <li><a href="documents/2024/cours1.pdf" download="cours1.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 1</a></li>
+                        <li><a href="documents/2024/cours2.pdf" download="cours2.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 2</a></li>
+                    </ul>
+                </article>
+
+                <!-- Semestre 2 -->
+                <article id="semestre2_2024">
+                    <h3>Semestre 2</h3>
+                    <ul>
+                        <li><a href="documents/2024/cours3.pdf" download="cours3.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 3</a></li>
+                        <li><a href="documents/2024/cours4.pdf" download="cours4.pdf"><i class="fas fa-file-pdf"></i> Télécharger Cours 4</a></li>
+                    </ul>
+                </article>
+            </section>
+     </div>
+     <aside class="sidebar">
+        <img src="./ressource/image_info.jpeg" alt=""><br><br>
+        <p>"Chers étudiants en mathématiques et informatique, votre persévérance face aux défis forge non seulement votre esprit,
+             mais aussi l'avenir. Chaque équation résolue, chaque ligne de code écrite est une victoire. Continuez à explorer,
+              à créer et à rêver grand – le monde a besoin de vos talents !"</p><br><br>
+        <p>"À vous, passionnés de mathématiques et d'informatique,
+             n'oubliez jamais que vos efforts d'aujourd'hui construisent les solutions de demain.
+              Les nombres et les algorithmes sont vos outils pour repousser les limites du possible.
+             Restez curieux, audacieux et confiants – vous êtes les architectes d'un futur brillant !"</p>
+     </aside>
+     
+    </main>
+   
+   <footer>
+    <div class="contenu">
+        <div class="contact_info">
+            <h3>contact</h3>
+            <p>Adresse:sicogi ,Yopougon,côte d'ivoi</p>
+            <p>Téléphone: +255 0788192480</p>
+        </div>
+    </div>
+     <div class="social_media"><br>
+
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/" target="_blank" aria-label="twitter"><i class="fab fa-twitter" ></i></a>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="istagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/O788192480" target="_blank" aria-label="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://mailto:kacoujunior98@gmail.com" target="_blank" aria-label="Whatsapp"><i class="fab fa-google"></i></a>
+    </div><br>
+     <p class="copyright">&copy; 2025 UFR-MI. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

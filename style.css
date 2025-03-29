@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  /* Style pour l'entête */
+  header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh; /* Occupe toute la vue */
+    background-image:url('./ressource/bg1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 1;
+    animation: slideOutHeader 4s ease-in-out forwards;
+   
+  }
+
+  /* Style pour le contenu principal */
+  main {
+    position: relative;
+    top:0; /* Commence après l'entête */
+    width: 100%;
+    height: 100vh; /* Occupe au moins toute la hauteur visible */
+    background-image: url('./ressource/bg3.jpg'); 
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    background-attachment: fixed; /* Fond fixe pendant le défilement */
+    /* Appliquer l'animation au main */
+    animation: slideUpBackground 1s ease-in-out forwards;
+      }
+    
+/* Style pour le footer */
+footer {
+  position: relative;
+  top: 0; /* Commence après le main */
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  z-index: 3;
+  background-color:#1a73e8;
+  color: black;
+  height: 40%;
+  width: 100%;
+  font-size: 20px;
+}
+
+
+
+  /* Animation pour faire apparaitre le contenu */
+  @keyframes slideUpBackground {
+    from {
+        background-position: center 100vh;
+    }
+    to {
+        background-position: center 0;
+  }
+}
+
+/* Permettre le défilement du contenu */
+header, main,footer {
+  overflow-y: auto; /* Permet le défilement du contenu */
+}
+  header h1{
+    color: white; 
+    /* text-transform: uppercase; */
+    text-align: center;
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    transform: translateX(-50%); /* Déplace le titre complètement à gauche (hors de l'écran) */
+    transition: transform 6s ease; /* Animation de 1 seconde */
+   
+}
+
+/* Effet de transition au survol de l'header */
+header:hover h1 {
+  transform: translateX(0); /* Ramène le titre à sa position d'origine */
+}
+    
+    
+    
+  
+
+  .navitemli ul{ 
+    color: white;
+    float: right;
+    display: flex;
+    align-self: flex-end; /* Aligne la navbar à droite */
+    margin-bottom: 20px; /* Espace entre la navbar et le titre */
+    border: none;
+    /* word-break: break-word; */
+}
+
+#mainMenu{
+  background: rgba(29,58,42,0.5);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+#mainMenu .navitemli ul li{
+    list-style: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    
+  }
+
+  #mainMenu .navitemli ul li a{
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20%;
+    padding: 10px 30px; 
+    
+
+  }
+  #mainMenu .navitemli ul li a:hover{
+    background-color: rgb(107, 141, 129);
+    color: black;
+    
+  }
+  #nas{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: color 0.3s ease 0s; 
+    color: white;
+    margin: 25px 30px;
+    line-height: 1.1;
+    font-weight: 500;
+    float: left;
+    text-decoration: none;
+    border-radius: 20%;
+    padding: 10px 30px;
+
+  }
+  #nas:hover{
+    background-color: rgb(107, 141, 129);
+    color: black;
+  }
+
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -1;
+    transition: transform 0.5s ease;
+}
+
+header:hover::before {
+    transform: scale(1.1); /* Zoom léger au survol */
+}
+
+.you{
+    background-color: aliceblue;
+    color: antiquewhite;
+    height: 60%;
+    width: 100%;
+
+}
+#me{
+  color: #000;
+  font-size: 36px;
+  text-transform: bold;
+  font-weight: 2rem;
+  padding-left: 400px;
+  padding-top: 20px;
+  padding-bottom: 0;
+ 
+}
+.paragraphwrap{
+    color: black;
+    font-size: 18px;
+    margin-top: 72px;
+    letter-spacing: .15em;
+    line-height: 1.75;
+    
+    
+    
+}
+.paragraphwrap {
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center;     /* Centre verticalement */
+  height: 30vh;           /* Prend toute la hauteur de la vue */
+}
+
+.paragraphwrap p {
+  text-align: left;      /* Centre le texte à l'intérieur du paragraphe */
+  max-width: 600px;        /* Limite la largeur du paragraphe pour une meilleure lisibilité */
+  margin: 0 auto;          /* Centre le paragraphe dans son conteneur */
+  
+
+}
+.mysection{
+  background: rgba(0,0,0,0.5);
+  padding: 10px;
+}
+
+footer #mail{
+  color: white;
+  font-size: 14px bold;
+}
+footer .contact_info{
+  color: white;
+  font-size: 14px bold;
+}
+footer h3{
+  color: white;
+  font-size: 14px bold;
+}
+
+.social_media {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 1.5rem;
+}
+  .social_media i {
+      transition: color 0.3s ease;
+      color: #fff; /* Couleur par défaut */
+
+  }
+  
+
+  .social_media i:hover {
+      color: #0056b3; /* Couleur au survol */
+      animation: bounce 1s infinite; /* Animation de rebond au survol */
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+.copyright {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation:  annime_ecriture 3s steps(30, end) infinite;
+    color: white;
+}
+
+@keyframes annime_ecriture {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+

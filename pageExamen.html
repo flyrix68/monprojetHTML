@@ -102,308 +102,1211 @@ document.getElementById('ajouterSujetForm').addEventListener('submit', function(
     
   
     <main>
-        <div>
+
+        <div class="container">
     
             <!-- Année 2022-2023 -->
             <section id="L3_annee_2022">
                 <h2>Licence3 Année Universitaire 2022-2023</h2>
                 <h5>Archive sujet filière Mathématique</h5>
                 
-                <!-- Semestre 1 -->
-                <article id="semestre1_2022">
+                            <!-- Semestre 1 -->
                     <h3>Semestre 1</h3>
-                    <h6>Session 1</h3>
-                    <ul>
-                        <li><a href="documents/2022/sujet1.pdf" download="sujet1.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 1</a></li>
-                        <li><a href="documents/2022/sujet2.pdf" download="sujet2.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 2</a></li>
-                    </ul>
-                    <h6>Session 2</h3>
-                    <ul>
-                        <li><a href="documents/2022/sujet3.pdf" download="sujet3.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 3</a></li>
-                        <li><a href="documents/2022sujets4.pdf" download="sujet4.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 4</a></li>
-                    </ul>
-                </article>
+                <div class="documents_grid" id="documents-container">
+                    <!-- Document card 1 -->
+                    <div class="document_card">
+                        <div class="card_header">
+                            <div class="doc-icon">PDF</div>
+                            <div>Recherche opérationnelle</div>
+                        </div>
+                        <div class="card_body">
+                            <h3 class="doc-title">programmation linéaire</h3>
+                            <div class="doc-meta">Examen 2022 - Prof. Mr Tuo </div>
+                            <div class="card_actions">
+                                <a href="documents/2022/cours1.pdf" download="cours1.pdf" class="btn btn-primary">Télécharger</a>
+                                <button class="btn btn-outline">Aperçu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Document card 2 -->
+                    <div class="document_card">
+                        <div class="card_header">
+                            <div class="doc-icon">PDF</div>
+                            <div>Topologie</div>
+                        </div>
+                        <div class="card_body">
+                            <h3 class="doc-title">Topologie</h3>
+                            <div class="doc-meta">Examen 2022 - Prof. Mr [nom]</div>
+                            <div class="card_actions">
+                                <a href="documents/2022/cours2.pdf" download="cours2.pdf" class="btn btn-primary">Télécharger</a>
+                                <button class="btn btn-outline">Aperçu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Document card 3 -->
+                    <div class="document_card">
+                        <div class="card_header">
+                            <div class="doc-icon">PDF</div>
+                            <div>Géometrie</div>
+                        </div>
+                        <div class="card_body">
+                            <h3 class="doc-title">Géometrie</h3>
+                            <div class="doc-meta">Examen 2022 - Prof. Mr [Nom]</div>
+                            <div class="card_actions">
+                                <a href="documents/2022/cours3.pdf" download="cours3.pdf" class="btn btn-primary">Télécharger</a>
+                                <button class="btn btn-outline">Aperçu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Document card 4 -->
+                    <div class="document_card">
+                        <div class="card_header">
+                            <div class="doc-icon">PDF</div>
+                            <div>systeme</div>
+                        </div>
+                        <div class="card_body">
+                            <h3 class="doc-title">systeme</h3>
+                            <div class="doc-meta">Examen 2022 - Prof. Mr [Nom]</div>
+                            <div class="card_actions">
+                                <a href="documents/2022/cours4.pdf" download="cours4.pdf" class="btn btn-primary">Télécharger</a>
+                                <button class="btn btn-outline">Aperçu</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            
 
-                <!-- Semestre 2 -->
-                <article id="semestre2_2022">
-                    <h3>Semestre 2</h3>
-                    <h6>Session 1</h6>
-                    <ul>
-                        <li><a href="documents/2022/sujet5.pdf" download="sujet5.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 5</a></li>
-                        <li><a href="documents/2022/sujet6.pdf" download="sujet6.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 6</a></li>
-                    </ul>
-                    <h6>Session 1</h6>
-                    <ul>
-                        <li><a href="documents/2022/sujet7.pdf" download="sujet7.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 7</a></li>
-                        <li><a href="documents/2022/sujet8.pdf" download="sujet8.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 8</a></li>
-                    </ul>
-                </article>
+                <h3>Semestre 2</h3>
+                <div class="documents_grid" id="documents-container">
+                    <!-- Document card 1 -->
+                    <div class="document_card">
+                        <div class="card_header">
+                            <div class="doc-icon">PDF</div>
+                            <div>Examen</div>
+                        </div>
+                        <div class="card_body">
+                            <h3 class="doc-title">Examen</h3>
+                            <div class="doc-meta">Examen 2022 - Prof. Mr [nom]</div>
+                            <div class="card_actions">
+                                <a href="documents/2022/cours1.pdf" download="cours1.pdf" class="btn btn-primary">Télécharger</a>
+                                <button class="btn btn-outline">Aperçu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Document card 2 -->
+                    <div class="document_card">
+                        <div class="card_header">
+                            <div class="doc-icon">PDF</div>
+                            <div>Examen</div>
+                        </div>
+                        <div class="card_body">
+                            <h3 class="doc-title">Examen</h3>
+                            <div class="doc-meta">Examen 2022 - Prof. Mr [nom]</div>
+                            <div class="card_actions">
+                                <a href="documents/2022/cours2.pdf" download="cours2.pdf" class="btn btn-primary">Télécharger</a>
+                                <button class="btn btn-outline">Aperçu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Document card 3 -->
+                    <div class="document_card">
+                        <div class="card_header">
+                            <div class="doc-icon">PDF</div>
+                            <div>Examen</div>
+                        </div>
+                        <div class="card_body">
+                            <h3 class="doc-title">Examen</h3>
+                            <div class="doc-meta">Examen 2022 - Prof. Mr [nom]</div>
+                            <div class="card_actions">
+                                <a href="documents/2022/cours3.pdf" download="cours3.pdf" class="btn btn-primary">Télécharger</a>
+                                <button class="btn btn-outline">Aperçu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Document card 4 -->
+                    <div class="document_card">
+                        <div class="card_header">
+                            <div class="doc-icon">PDF</div>
+                            <div>Examen</div>
+                        </div>
+                        <div class="card_body">
+                            <h3 class="doc-title">Examen</h3>
+                            <div class="doc-meta">Examen 2022 - Prof. Mr [nom]</div>
+                            <div class="card_actions">
+                                <a href="documents/2022/cours4.pdf" download="cours4.pdf" class="btn btn-primary">Télécharger</a>
+                                <button class="btn btn-outline">Aperçu</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            
 
-                <h5>Archive sujet filière Science-informatique</h5>
+                <h5>Archive cours filière Science-informatique</h5>
                 
-                <!-- Semestre 1 -->
-                <article id="semestre1_2022">
+                            <!-- Semestre 1 -->
                     <h3>Semestre 1</h3>
-                    <h6>Session 1</h6>
-                    <ul>
-                        <li><a href="documents/2022/sujet1.pdf" download="sujet1.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 1</a></li>
-                        <li><a href="documents/2022/sujet2.pdf" download="sujet2.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 2</a></li>
-                    </ul>
-                    <h6>Session 2</h6>
-                    <ul>
-                        <li><a href="documents/2022/sujet3.pdf" download="sujet3.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 3</a></li>
-                        <li><a href="documents/2022/sujet4.pdf" download="sujet4.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 4</a></li>
-                    </ul>
-                </article>
+                <div class="documents_grid" id="documents-container">
+                    <!-- Document card 1 -->
+                    <div class="document_card">
+                        <div class="card_header">
+                            <div class="doc-icon">PDF</div>
+                            <div>Réseaux</div>
+                        </div>
+                        <div class="card_body">
+                            <h3 class="doc-title">Protocoles TCP/IP</h3>
+                            <div class="doc-meta">Examen 2022 - Prof. Mr Konaté</div>
+                            <div class="card_actions">
+                                <a href="documents/2022/cours1.pdf" download="cours1.pdf" class="btn btn-primary">Télécharger</a>
+                                <button class="btn btn-outline">Aperçu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Document card 2 -->
+                    <div class="document_card">
+                        <div class="card_header">
+                            <div class="doc-icon">PDF</div>
+                            <div>Génie Logiciel</div>
+                        </div>
+                        <div class="card_body">
+                            <h3 class="doc-title">Atelier Génie Logiciel</h3>
+                            <div class="doc-meta">Examen 2022 - Prof. Mme Trey</div>
+                            <div class="card_actions">
+                                <a href="documents/2022/cours2.pdf" download="cours2.pdf" class="btn btn-primary">Télécharger</a>
+                                <button class="btn btn-outline">Aperçu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Document card 3 -->
+                    <div class="document_card">
+                        <div class="card_header">
+                            <div class="doc-icon">PDF</div>
+                            <div>Algorithmique</div>
+                        </div>
+                        <div class="card_body">
+                            <h3 class="doc-title">Algorithmique Avancée</h3>
+                            <div class="doc-meta">Examen 2022 - Prof. Mr [Nom]</div>
+                            <div class="card_actions">
+                                <a href="documents/2022/cours3.pdf" download="cours3.pdf" class="btn btn-primary">Télécharger</a>
+                                <button class="btn btn-outline">Aperçu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Document card 4 -->
+                    <div class="document_card">
+                        <div class="card_header">
+                            <div class="doc-icon">PDF</div>
+                            <div>Base de Données</div>
+                        </div>
+                        <div class="card_body">
+                            <h3 class="doc-title">Bases de Données</h3>
+                            <div class="doc-meta">Examen 2022 - Prof. Mr [Nom]</div>
+                            <div class="card_actions">
+                                <a href="documents/2022/cours4.pdf" download="cours4.pdf" class="btn btn-primary">Télécharger</a>
+                                <button class="btn btn-outline">Aperçu</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            
 
-                <!-- Semestre 2 -->
-                <article id="semestre2_2022">
-                    <h3>Semestre 2</h3>
-                    <h6>Session 1</h6>
-                    <ul>
-                        <li><a href="documents/2022/sujet3.pdf" download="sujet3.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 3</a></li>
-                        <li><a href="documents/2022/sujet4.pdf" download="sujet4.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 4</a></li>
-                    </ul>
-                    <h6>Session 2</h6>
-                    <ul>
-                        <li><a href="documents/2022/sujet5.pdf" download="sujet5.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 5</a></li>
-                        <li><a href="documents/2022/sujet6.pdf" download="sujet6.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 6</a></li>
-                    </ul>
-                </article>
+                <h3>Semestre 2</h3>
+                <div class="documents_grid" id="documents-container">
+                    <!-- Document card 1 -->
+                    <div class="document_card">
+                        <div class="card_header">
+                            <div class="doc-icon">PDF</div>
+                            <div>Adminstration réseaux sous linux</div>
+                        </div>
+                        <div class="card_body">
+                            <h3 class="doc-title">Adminstration réseaux sous linux</h3>
+                            <div class="doc-meta">Examen 2022 - Prof. Mr Diallo</div>
+                            <div class="card_actions">
+                                <a href="documents/2022/cours1.pdf" download="cours1.pdf" class="btn btn-primary">Télécharger</a>
+                                <button class="btn btn-outline">Aperçu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Document card 2 -->
+                    <div class="document_card">
+                        <div class="card_header">
+                            <div class="doc-icon">PDF</div>
+                            <div>Bigdata</div>
+                        </div>
+                        <div class="card_body">
+                            <h3 class="doc-title">Bigdata</h3>
+                            <div class="doc-meta">Examen 2022 - Prof. Mr Bakayoko</div>
+                            <div class="card_actions">
+                                <a href="documents/2022/cours2.pdf" download="cours2.pdf" class="btn btn-primary">Télécharger</a>
+                                <button class="btn btn-outline">Aperçu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Document card 3 -->
+                    <div class="document_card">
+                        <div class="card_header">
+                            <div class="doc-icon">PDF</div>
+                            <div>Programmation web</div>
+                        </div>
+                        <div class="card_body">
+                            <h3 class="doc-title">HTML/CSS</h3>
+                            <div class="doc-meta">Examen 2022 - Prof. Mr Konaté</div>
+                            <div class="card_actions">
+                                <a href="documents/2022/cours3.pdf" download="cours3.pdf" class="btn btn-primary">Télécharger</a>
+                                <button class="btn btn-outline">Aperçu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Document card 4 -->
+                    <div class="document_card">
+                        <div class="card_header">
+                            <div class="doc-icon">PDF</div>
+                            <div>Base de Données</div>
+                        </div>
+                        <div class="card_body">
+                            <h3 class="doc-title">Bases de Données</h3>
+                            <div class="doc-meta">Examen 2022 - Prof. Mr Bayo Mock</div>
+                            <div class="card_actions">
+                                <a href="documents/2022/cours4.pdf" download="cours4.pdf" class="btn btn-primary">Télécharger</a>
+                                <button class="btn btn-outline">Aperçu</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            
 
                 <h5>Archive cours filière Mécanique</h5>
-                
-                <!-- Semestre 1 -->
-                <article id="semestre1_2022">
+                                 <!-- Semestre 1 -->
                     <h3>Semestre 1</h3>
-                    <h6>Session 1</h6>
-                    <ul>
-                        <li><a href="documents/2022/sujet1.pdf" download="sujet1.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 1</a></li>
-                        <li><a href="documents/2022/sujet2.pdf" download="sujet2.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet2</a></li>
-                    </ul>
-                    <h6>Session 1</h6>
-                    <ul>
-                        <li><a href="documents/2022/sujet1.pdf" download="sujet1.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 1</a></li>
-                        <li><a href="documents/2022/sujet2.pdf" download="sujet2.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet2</a></li>
-                    </ul>
-                    <h6>Session 2</h6>
-                    <ul>
-                        <li><a href="documents/2022/sujet3.pdf" download="sujet3.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 3</a></li>
-                        <li><a href="documents/2022/sujet4.pdf" download="sujet4.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 4</a></li>
-                    </ul>
-                </article>
+                <div class="documents_grid" id="documents-container">
+                    <!-- Document card 1 -->
+                    <div class="document_card">
+                        <div class="card_header">
+                            <div class="doc-icon">PDF</div>
+                            <div>Examen de ...</div>
+                        </div>
+                        <div class="card_body">
+                            <h3 class="doc-title">Examen de ...</h3>
+                            <div class="doc-meta">Examen 2022 - Prof. Mr ...</div>
+                            <div class="card_actions">
+                                <a href="documents/2022/cours1.pdf" download="cours1.pdf" class="btn btn-primary">Télécharger</a>
+                                <button class="btn btn-outline">Aperçu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Document card 2 -->
+                    <div class="document_card">
+                        <div class="card_header">
+                            <div class="doc-icon">PDF</div>
+                            <div>Examen de ...</div>
+                        </div>
+                        <div class="card_body">
+                            <h3 class="doc-title">Examen</h3>
+                            <div class="doc-meta">Examen 2022 - Prof. Mr ...</div>
+                            <div class="card_actions">
+                                <a href="documents/2022/cours2.pdf" download="cours2.pdf" class="btn btn-primary">Télécharger</a>
+                                <button class="btn btn-outline">Aperçu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Document card 3 -->
+                    <div class="document_card">
+                        <div class="card_header">
+                            <div class="doc-icon">PDF</div>
+                            <div>Examen de ...</div>
+                        </div>
+                        <div class="card_body">
+                            <h3 class="doc-title">Examen de ...</h3>
+                            <div class="doc-meta">Examen 2022 - Prof. Mr [Nom]</div>
+                            <div class="card_actions">
+                                <a href="documents/2022/cours3.pdf" download="cours3.pdf" class="btn btn-primary">Télécharger</a>
+                                <button class="btn btn-outline">Aperçu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Document card 4 -->
+                    <div class="document_card">
+                        <div class="card_header">
+                            <div class="doc-icon">PDF</div>
+                            <div>Examen de ...</div>
+                        </div>
+                        <div class="card_body">
+                            <h3 class="doc-title">Examen de ...</h3>
+                            <div class="doc-meta">Examen 2022 - Prof. Mr [Nom]</div>
+                            <div class="card_actions">
+                                <a href="documents/2022/cours4.pdf" download="cours4.pdf" class="btn btn-primary">Télécharger</a>
+                                <button class="btn btn-outline">Aperçu</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            
 
-                <!-- Semestre 2 -->
-                <article id="semestre2_2022">
-                    <h3>Semestre 2</h3>
-                    <h6>Session 1</h6>
-                    <ul>
-                        <li><a href="documents/2022/sujet3.pdf" download="sujet3.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 3</a></li>
-                        <li><a href="documents/2022/sujet4.pdf" download="sujet4.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 4</a></li>
-                    </ul>
-                    <h6>Session 2</h6>
-                    <ul>
-                        <li><a href="documents/2022/sujet5.pdf" download="sujet5.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 5</a></li>
-                        <li><a href="documents/2022/sujet6.pdf" download="sujet6.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 6</a></li>
-                    </ul>
-                </article>
+                <h3>Semestre 2</h3>
+                <div class="documents_grid" id="documents-container">
+                    <!-- Document card 1 -->
+                    <div class="document_card">
+                        <div class="card_header">
+                            <div class="doc-icon">PDF</div>
+                            <div>Examen de ...</div>
+                        </div>
+                        <div class="card_body">
+                            <h3 class="doc-title">Examen de ...</h3>
+                            <div class="doc-meta">Examen 2022 - Prof. Mr ...</div>
+                            <div class="card_actions">
+                                <a href="documents/2022/cours1.pdf" download="cours1.pdf" class="btn btn-primary">Télécharger</a>
+                                <button class="btn btn-outline">Aperçu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Document card 2 -->
+                    <div class="document_card">
+                        <div class="card_header">
+                            <div class="doc-icon">PDF</div>
+                            <div>Examen de ...</div>
+                        </div>
+                        <div class="card_body">
+                            <h3 class="doc-title">Examen de ...</h3>
+                            <div class="doc-meta">Examen 2022 - Prof. Mr ...</div>
+                            <div class="card_actions">
+                                <a href="documents/2022/cours2.pdf" download="cours2.pdf" class="btn btn-primary">Télécharger</a>
+                                <button class="btn btn-outline">Aperçu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Document card 3 -->
+                    <div class="document_card">
+                        <div class="card_header">
+                            <div class="doc-icon">PDF</div>
+                            <div>Exemen de ...</div>
+                        </div>
+                        <div class="card_body">
+                            <h3 class="doc-title">Examen de ...</h3>
+                            <div class="doc-meta">Examen  2022 - Prof. Mr ...</div>
+                            <div class="card_actions">
+                                <a href="documents/2022/cours3.pdf" download="cours3.pdf" class="btn btn-primary">Télécharger</a>
+                                <button class="btn btn-outline">Aperçu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Document card 4 -->
+                    <div class="document_card">
+                        <div class="card_header">
+                            <div class="doc-icon">PDF</div>
+                            <div>Examen de ...</div>
+                        </div>
+                        <div class="card_body">
+                            <h3 class="doc-title">Examen de ...</h3>
+                            <div class="doc-meta">Examen 2022 - Prof. Mr ...</div>
+                            <div class="card_actions">
+                                <a href="documents/2022/cours4.pdf" download="cours4.pdf" class="btn btn-primary">Télécharger</a>
+                                <button class="btn btn-outline">Aperçu</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            
             </section>
-
              <!-- Année 2023-2024 -->
 
             <section id="annee_2023">
                 <h2>Année Universitaire 2023-2024</h2>
+                <h5>Archive cours filière Mathématique</h5>
                 
-                <!-- Semestre 1 -->
-                <h5>Archive sujet filière Mathématique</h5>
-                <article id="semestre1_2023">
-                    <h3>Semestre 1</h3>
-                    <h6>Session 1</h6>
-                    <ul>
-                        <li><a href="documents/2023/sujet1.pdf" download="sujet1.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 1</a></li>
-                        <li><a href="documents/2023/sujet2.pdf" download="sujet2.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 2</a></li>
-                    </ul>
-                    <h6>Session 2</h6>
-                    <ul>
-                        <li><a href="documents/2023/sujet3.pdf" download="sujet3.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 3</a></li>
-                        <li><a href="documents/2023/sujet4.pdf" download="sujet4.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 4</a></li>
-                    </ul>
-                </article>
-                
-                <!-- Semestre 2 -->
-                <article id="semestre2_2023">
-                    <h3>Semestre 2</h3>
-                    <h6>Session 1</h6>
-                    <ul>
-                        <li><a href="documents/2023/sujet3.pdf" download="sujet3.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 3</a></li>
-                        <li><a href="documents/2023/sujet4.pdf" download="sujet4.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 4</a></li>
-                    </ul>
-                    <h6>Session 2</h6>
-                    <ul>
-                        <li><a href="documents/2023/sujet5.pdf" download="sujet3.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 5</a></li>
-                        <li><a href="documents/2023/sujet6.pdf" download="sujet4.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 6</a></li>
-                    </ul>
-                </article>
-
-                <h5>Archive sujet filière Science-informatique</h5>
-                <!-- Semestre 1 -->
-                <article id="semestre1_2023">
-                    <h3>Semestre 1</h3>
-                    <h6>Session 1</h6>
-                    <ul>
-                        <li><a href="documents/2023/sujet1.pdf" download="sujet1.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 1</a></li>
-                        <li><a href="documents/2023/sujet2.pdf" download="sujet2.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 2</a></li>
-                    </ul>
-                    <h6>Session 2</h6>
-                    <ul>
-                        <li><a href="documents/2023/sujet3.pdf" download="sujet3.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 3</a></li>
-                        <li><a href="documents/2023/sujet4.pdf" download="sujet4.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 4</a></li>
-                    </ul>
-                </article>
-
-                <!-- Semestre 2 -->
-                <article id="semestre2_2023">
-                    <h3>Semestre 2</h3>
-                    <h6>Session 1</h6>
-                    <ul>
-                        <li><a href="documents/2023/sujet3.pdf" download="sujet3.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 3</a></li>
-                        <li><a href="documents/2023/sujet4.pdf" download="sujet4.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 4</a></li>
-                    </ul>
-                    <h6>Session 2</h6>
-                    <ul>
-                        <li><a href="documents/2023/sujet5.pdf" download="sujet5.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 5</a></li>
-                        <li><a href="documents/2023/sujet6.pdf" download="sujet6.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 6</a></li>
-                    </ul>
-                </article>
-                <h5>Archive sujet filière Mécanique</h5>
-                <!-- Semestre 1 -->
-                <article id="semestre1_2023">
-                    <h3>Semestre 1</h3>
-                    <h6>Session 1</h6>
-                    <ul>
-                        <li><a href="documents/2023/sujet1.pdf" download="sujet1.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 1</a></li>
-                        <li><a href="documents/2023/sujet2.pdf" download="sujet2.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 2</a></li>
-                    </ul>
-                    <h6>Session 2</h6>
-                    <ul>
-                        <li><a href="documents/2023/sujet3.pdf" download="sujet3.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 3</a></li>
-                        <li><a href="documents/2023/sujet4.pdf" download="sujet4.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 4</a></li>
-                    </ul>
-                </article>
-
-                <!-- Semestre 2 -->
-                <article id="semestre2_2023">
-                    <h3>Semestre 2</h3>
-                    <h6>Session 1</h6>
-                    <ul>
-                        <li><a href="documents/2023/sujet3.pdf" download="sujet3.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 3</a></li>
-                        <li><a href="documents/2023/sujet4.pdf" download="sujet4.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 4</a></li>
-                    </ul>
-                    <h6>Session 2</h6>
-                    <ul>
-                        <li><a href="documents/2023/suje53.pdf" download="sujet3.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 5</a></li>
-                        <li><a href="documents/2023/sujet6.pdf" download="sujet4.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 6</a></li>
-                    </ul>
-                </article>
-
-             <!-- Année 2024-2025 -->
+                       <!-- Semestre 1 -->
+                       <h3>Semestre 1</h3>
+                       <div class="documents_grid" id="documents-container">
+                           <!-- Document card 1 -->
+                           <div class="document_card">
+                               <div class="card_header">
+                                   <div class="doc-icon">PDF</div>
+                                   <div>Recherche opérationnelle</div>
+                               </div>
+                               <div class="card_body">
+                                   <h3 class="doc-title">programmation linéaire</h3>
+                                   <div class="doc-meta">Examen 2023 - Prof. Mr Tuo </div>
+                                   <div class="card_actions">
+                                       <a href="documents/2022/cours1.pdf" download="cours1.pdf" class="btn btn-primary">Télécharger</a>
+                                       <button class="btn btn-outline">Aperçu</button>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Document card 2 -->
+                           <div class="document_card">
+                               <div class="card_header">
+                                   <div class="doc-icon">PDF</div>
+                                   <div>Topologie</div>
+                               </div>
+                               <div class="card_body">
+                                   <h3 class="doc-title">Topologie</h3>
+                                   <div class="doc-meta">Examen 2023 - Prof. Mr [nom]</div>
+                                   <div class="card_actions">
+                                       <a href="documents/2022/cours2.pdf" download="cours2.pdf" class="btn btn-primary">Télécharger</a>
+                                       <button class="btn btn-outline">Aperçu</button>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Document card 3 -->
+                           <div class="document_card">
+                               <div class="card_header">
+                                   <div class="doc-icon">PDF</div>
+                                   <div>Géometrie</div>
+                               </div>
+                               <div class="card_body">
+                                   <h3 class="doc-title">Géometrie</h3>
+                                   <div class="doc-meta">Examen 2023 - Prof. Mr [Nom]</div>
+                                   <div class="card_actions">
+                                       <a href="documents/2022/cours3.pdf" download="cours3.pdf" class="btn btn-primary">Télécharger</a>
+                                       <button class="btn btn-outline">Aperçu</button>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Document card 4 -->
+                           <div class="document_card">
+                               <div class="card_header">
+                                   <div class="doc-icon">PDF</div>
+                                   <div>systeme</div>
+                               </div>
+                               <div class="card_body">
+                                   <h3 class="doc-title">systeme</h3>
+                                   <div class="doc-meta">Examen 2023 - Prof. Mr [Nom]</div>
+                                   <div class="card_actions">
+                                       <a href="documents/2022/cours4.pdf" download="cours4.pdf" class="btn btn-primary">Télécharger</a>
+                                       <button class="btn btn-outline">Aperçu</button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                                   
+       
+                       <h3>Semestre 2</h3>
+                       <div class="documents_grid" id="documents-container">
+                           <!-- Document card 1 -->
+                           <div class="document_card">
+                               <div class="card_header">
+                                   <div class="doc-icon">PDF</div>
+                                   <div>Examen</div>
+                               </div>
+                               <div class="card_body">
+                                   <h3 class="doc-title">Examen</h3>
+                                   <div class="doc-meta">Examen 2023 - Prof. Mr [nom]</div>
+                                   <div class="card_actions">
+                                       <a href="documents/2022/cours1.pdf" download="cours1.pdf" class="btn btn-primary">Télécharger</a>
+                                       <button class="btn btn-outline">Aperçu</button>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Document card 2 -->
+                           <div class="document_card">
+                               <div class="card_header">
+                                   <div class="doc-icon">PDF</div>
+                                   <div>Examen</div>
+                               </div>
+                               <div class="card_body">
+                                   <h3 class="doc-title">Examen</h3>
+                                   <div class="doc-meta">Examen 2023 - Prof. Mr [nom]</div>
+                                   <div class="card_actions">
+                                       <a href="documents/2022/cours2.pdf" download="cours2.pdf" class="btn btn-primary">Télécharger</a>
+                                       <button class="btn btn-outline">Aperçu</button>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Document card 3 -->
+                           <div class="document_card">
+                               <div class="card_header">
+                                   <div class="doc-icon">PDF</div>
+                                   <div>Examen</div>
+                               </div>
+                               <div class="card_body">
+                                   <h3 class="doc-title">Examen</h3>
+                                   <div class="doc-meta">Examen 2023 - Prof. Mr [nom]</div>
+                                   <div class="card_actions">
+                                       <a href="documents/2022/cours3.pdf" download="cours3.pdf" class="btn btn-primary">Télécharger</a>
+                                       <button class="btn btn-outline">Aperçu</button>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Document card 4 -->
+                           <div class="document_card">
+                               <div class="card_header">
+                                   <div class="doc-icon">PDF</div>
+                                   <div>Examen</div>
+                               </div>
+                               <div class="card_body">
+                                   <h3 class="doc-title">Examen</h3>
+                                   <div class="doc-meta">Examen 2023 - Prof. Mr [nom]</div>
+                                   <div class="card_actions">
+                                       <a href="documents/2022/cours4.pdf" download="cours4.pdf" class="btn btn-primary">Télécharger</a>
+                                       <button class="btn btn-outline">Aperçu</button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                                   
+       
+                       <h5>Archive cours filière Science-informatique</h5>
+                       
+                                   <!-- Semestre 1 -->
+                           <h3>Semestre 1</h3>
+                       <div class="documents_grid" id="documents-container">
+                           <!-- Document card 1 -->
+                           <div class="document_card">
+                               <div class="card_header">
+                                   <div class="doc-icon">PDF</div>
+                                   <div>Réseaux</div>
+                               </div>
+                               <div class="card_body">
+                                   <h3 class="doc-title">Protocoles TCP/IP</h3>
+                                   <div class="doc-meta">Examen 2023 - Prof. Mr Konaté</div>
+                                   <div class="card_actions">
+                                       <a href="documents/2022/cours1.pdf" download="cours1.pdf" class="btn btn-primary">Télécharger</a>
+                                       <button class="btn btn-outline">Aperçu</button>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Document card 2 -->
+                           <div class="document_card">
+                               <div class="card_header">
+                                   <div class="doc-icon">PDF</div>
+                                   <div>Génie Logiciel</div>
+                               </div>
+                               <div class="card_body">
+                                   <h3 class="doc-title">Atelier Génie Logiciel</h3>
+                                   <div class="doc-meta">Examen 2023 - Prof. Mme Trey</div>
+                                   <div class="card_actions">
+                                       <a href="documents/2022/cours2.pdf" download="cours2.pdf" class="btn btn-primary">Télécharger</a>
+                                       <button class="btn btn-outline">Aperçu</button>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Document card 3 -->
+                           <div class="document_card">
+                               <div class="card_header">
+                                   <div class="doc-icon">PDF</div>
+                                   <div>Algorithmique</div>
+                               </div>
+                               <div class="card_body">
+                                   <h3 class="doc-title">Algorithmique Avancée</h3>
+                                   <div class="doc-meta">Examen 2022 - Prof. Mr [Nom]</div>
+                                   <div class="card_actions">
+                                       <a href="documents/2022/cours3.pdf" download="cours3.pdf" class="btn btn-primary">Télécharger</a>
+                                       <button class="btn btn-outline">Aperçu</button>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Document card 4 -->
+                           <div class="document_card">
+                               <div class="card_header">
+                                   <div class="doc-icon">PDF</div>
+                                   <div>Base de Données</div>
+                               </div>
+                               <div class="card_body">
+                                   <h3 class="doc-title">Bases de Données</h3>
+                                   <div class="doc-meta">Examen 2023 - Prof. Mr [Nom]</div>
+                                   <div class="card_actions">
+                                       <a href="documents/2022/cours4.pdf" download="cours4.pdf" class="btn btn-primary">Télécharger</a>
+                                       <button class="btn btn-outline">Aperçu</button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                                   
+       
+                       <h3>Semestre 2</h3>
+                       <div class="documents_grid" id="documents-container">
+                           <!-- Document card 1 -->
+                           <div class="document_card">
+                               <div class="card_header">
+                                   <div class="doc-icon">PDF</div>
+                                   <div>Adminstration réseaux sous linux</div>
+                               </div>
+                               <div class="card_body">
+                                   <h3 class="doc-title">Adminstration réseaux sous linux</h3>
+                                   <div class="doc-meta">Examen 2023 - Prof. Mr Diallo</div>
+                                   <div class="card_actions">
+                                       <a href="documents/2022/cours1.pdf" download="cours1.pdf" class="btn btn-primary">Télécharger</a>
+                                       <button class="btn btn-outline">Aperçu</button>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Document card 2 -->
+                           <div class="document_card">
+                               <div class="card_header">
+                                   <div class="doc-icon">PDF</div>
+                                   <div>Bigdata</div>
+                               </div>
+                               <div class="card_body">
+                                   <h3 class="doc-title">Bigdata</h3>
+                                   <div class="doc-meta">Examen 2023 - Prof. Mr Bakayoko</div>
+                                   <div class="card_actions">
+                                       <a href="documents/2022/cours2.pdf" download="cours2.pdf" class="btn btn-primary">Télécharger</a>
+                                       <button class="btn btn-outline">Aperçu</button>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Document card 3 -->
+                           <div class="document_card">
+                               <div class="card_header">
+                                   <div class="doc-icon">PDF</div>
+                                   <div>Programmation web</div>
+                               </div>
+                               <div class="card_body">
+                                   <h3 class="doc-title">HTML/CSS</h3>
+                                   <div class="doc-meta">Examen 2023 - Prof. Mr Konaté</div>
+                                   <div class="card_actions">
+                                       <a href="documents/2022/cours3.pdf" download="cours3.pdf" class="btn btn-primary">Télécharger</a>
+                                       <button class="btn btn-outline">Aperçu</button>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Document card 4 -->
+                           <div class="document_card">
+                               <div class="card_header">
+                                   <div class="doc-icon">PDF</div>
+                                   <div>Base de Données</div>
+                               </div>
+                               <div class="card_body">
+                                   <h3 class="doc-title">Bases de Données</h3>
+                                   <div class="doc-meta">Examen 2023 - Prof. Mr Bayo Mock</div>
+                                   <div class="card_actions">
+                                       <a href="documents/2022/cours4.pdf" download="cours4.pdf" class="btn btn-primary">Télécharger</a>
+                                       <button class="btn btn-outline">Aperçu</button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                                   
+       
+                       <h5>Archive cours filière Mécanique</h5>
+                                        <!-- Semestre 1 -->
+                           <h3>Semestre 1</h3>
+                       <div class="documents_grid" id="documents-container">
+                           <!-- Document card 1 -->
+                           <div class="document_card">
+                               <div class="card_header">
+                                   <div class="doc-icon">PDF</div>
+                                   <div>Examen de ...</div>
+                               </div>
+                               <div class="card_body">
+                                   <h3 class="doc-title">Examen de ...</h3>
+                                   <div class="doc-meta">Examen 2023 - Prof. Mr ...</div>
+                                   <div class="card_actions">
+                                       <a href="documents/2022/cours1.pdf" download="cours1.pdf" class="btn btn-primary">Télécharger</a>
+                                       <button class="btn btn-outline">Aperçu</button>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Document card 2 -->
+                           <div class="document_card">
+                               <div class="card_header">
+                                   <div class="doc-icon">PDF</div>
+                                   <div>Examen de ...</div>
+                               </div>
+                               <div class="card_body">
+                                   <h3 class="doc-title">Examen</h3>
+                                   <div class="doc-meta">Examen 2023 - Prof. Mr ...</div>
+                                   <div class="card_actions">
+                                       <a href="documents/2022/cours2.pdf" download="cours2.pdf" class="btn btn-primary">Télécharger</a>
+                                       <button class="btn btn-outline">Aperçu</button>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Document card 3 -->
+                           <div class="document_card">
+                               <div class="card_header">
+                                   <div class="doc-icon">PDF</div>
+                                   <div>Examen de ...</div>
+                               </div>
+                               <div class="card_body">
+                                   <h3 class="doc-title">Examen de ...</h3>
+                                   <div class="doc-meta">Examen 2023 - Prof. Mr [Nom]</div>
+                                   <div class="card_actions">
+                                       <a href="documents/2022/cours3.pdf" download="cours3.pdf" class="btn btn-primary">Télécharger</a>
+                                       <button class="btn btn-outline">Aperçu</button>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Document card 4 -->
+                           <div class="document_card">
+                               <div class="card_header">
+                                   <div class="doc-icon">PDF</div>
+                                   <div>Examen de ...</div>
+                               </div>
+                               <div class="card_body">
+                                   <h3 class="doc-title">Examen de ...</h3>
+                                   <div class="doc-meta">Examen 2023 - Prof. Mr [Nom]</div>
+                                   <div class="card_actions">
+                                       <a href="documents/2022/cours4.pdf" download="cours4.pdf" class="btn btn-primary">Télécharger</a>
+                                       <button class="btn btn-outline">Aperçu</button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                                   
+       
+                       <h3>Semestre 2</h3>
+                       <div class="documents_grid" id="documents-container">
+                           <!-- Document card 1 -->
+                           <div class="document_card">
+                               <div class="card_header">
+                                   <div class="doc-icon">PDF</div>
+                                   <div>Examen de ...</div>
+                               </div>
+                               <div class="card_body">
+                                   <h3 class="doc-title">Examen de ...</h3>
+                                   <div class="doc-meta">Examen 2023 - Prof. Mr ...</div>
+                                   <div class="card_actions">
+                                       <a href="documents/2022/cours1.pdf" download="cours1.pdf" class="btn btn-primary">Télécharger</a>
+                                       <button class="btn btn-outline">Aperçu</button>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Document card 2 -->
+                           <div class="document_card">
+                               <div class="card_header">
+                                   <div class="doc-icon">PDF</div>
+                                   <div>Examen de ...</div>
+                               </div>
+                               <div class="card_body">
+                                   <h3 class="doc-title">Examen de ...</h3>
+                                   <div class="doc-meta">Examen 2023 - Prof. Mr ...</div>
+                                   <div class="card_actions">
+                                       <a href="documents/2022/cours2.pdf" download="cours2.pdf" class="btn btn-primary">Télécharger</a>
+                                       <button class="btn btn-outline">Aperçu</button>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Document card 3 -->
+                           <div class="document_card">
+                               <div class="card_header">
+                                   <div class="doc-icon">PDF</div>
+                                   <div>Exemen de ...</div>
+                               </div>
+                               <div class="card_body">
+                                   <h3 class="doc-title">Examen de ...</h3>
+                                   <div class="doc-meta">Examen  2023 - Prof. Mr ...</div>
+                                   <div class="card_actions">
+                                       <a href="documents/2022/cours3.pdf" download="cours3.pdf" class="btn btn-primary">Télécharger</a>
+                                       <button class="btn btn-outline">Aperçu</button>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Document card 4 -->
+                           <div class="document_card">
+                               <div class="card_header">
+                                   <div class="doc-icon">PDF</div>
+                                   <div>Examen de ...</div>
+                               </div>
+                               <div class="card_body">
+                                   <h3 class="doc-title">Examen de ...</h3>
+                                   <div class="doc-meta">Examen 2023 - Prof. Mr ...</div>
+                                   <div class="card_actions">
+                                       <a href="documents/2022/cours4.pdf" download="cours4.pdf" class="btn btn-primary">Télécharger</a>
+                                       <button class="btn btn-outline">Aperçu</button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+             
+            </section>
             <section id="annee_2024">
                 <h2>Année Universitaire 2024-2025</h2>
-                <h5>Archive sujet filière Mathématique</h5>
-                <!-- Semestre 1 -->
-                <article id="semestre1_2024">
-                    <h3>Semestre 1</h3>
-                    <h6>Session 1</h6>
-                    <ul>
-                        <li><a href="documents/2024/sujet1.pdf" download="sujet1.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 1</a></li>
-                        <li><a href="documents/2024/sujet2.pdf" download="sujet2.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 2</a></li>
-                    </ul>
-                    <h6>Session 2</h6>
-                    <ul>
-                        <li><a href="documents/2024/sujet3.pdf" download="sujet3.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 3</a></li>
-                        <li><a href="documents/2024/sujet4.pdf" download="sujet4.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 4</a></li>
-                    </ul>
-                </article>
-                
-                <!-- Semestre 2 -->
-                <article id="semestre2_2024">
-                    <h3>Semestre 2</h3>
-                    <h6>Session 1</h6>
-                    <ul>
-                        <li><a href="documents/2024/sujet3.pdf" download="sujet3.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 3</a></li>
-                        <li><a href="documents/2024/sujet4.pdf" download="sujet4.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 4</a></li>
-                    </ul>
-                    <h6>Session 2</h6>
-                    <ul>
-                        <li><a href="documents/2024/sujet5.pdf" download="sujet5.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 5</a></li>
-                        <li><a href="documents/2024/sujet6.pdf" download="sujet6.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 6</a></li>
-                    </ul>
-                </article>
-                <h5>Archive sujet filière Science-informatique</h5>
-                <!-- Semestre 1 -->
-                <article id="semestre1_2024">
-                    <h3>Semestre 1</h3>
-                    <h6>Session 1</h6>
-                    <ul>
-                        <li><a href="documents/2024/sujet1.pdf" download="sujet1.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 1</a></li>
-                        <li><a href="documents/2024/sujet2.pdf" download="sujet2.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 2</a></li>
-                    </ul>
-                    <h6>Session 2</h6>
-                    <ul>
-                        <li><a href="documents/2024/sujet3.pdf" download="sujet3.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 3</a></li>
-                        <li><a href="documents/2024/sujet4.pdf" download="sujet4.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 4</a></li>
-                    </ul>
-                </article>
-
-                <!-- Semestre 2 -->
-                <article id="semestre2_2024">
-                    <h3>Semestre 2</h3>
-                    <h6>Session 1</h6>
-                    <ul>
-                        <li><a href="documents/2024/sujet3.pdf" download="sujet3.pdf"><i class="fas fa-file-pdf"></i> Télécharger  sujet 3</a></li>
-                        <li><a href="documents/2024/sujet4.pdf" download="sujet4.pdf"><i class="fas fa-file-pdf"></i> Télécharger  sujet 4</a></li>
-                    </ul>
-                    <h6>Session 2</h6>
-                    <ul>
-                        <li><a href="documents/2024/sujet5.pdf" download="sujet5.pdf"><i class="fas fa-file-pdf"></i> Télécharger  sujet 5</a></li>
-                        <li><a href="documents/2024/sujet6.pdf" download="sujet6.pdf"><i class="fas fa-file-pdf"></i> Télécharger  sujet 6</a></li>
-                    </ul>
-                </article>
-                <h5>Archive sujet filière Mécanique</h5>
-                <!-- Semestre 1 -->
-                <article id="semestre1_2024">
-                    <h3>Semestre 1</h3>
-                    <h6>Session 1</h6>
-                    <ul>
-                        <li><a href="documents/2024/sujet1.pdf" download="sujet1.pdf"><i class="fas fa-file-pdf"></i> Télécharger  sujet 1</a></li>
-                        <li><a href="documents/2024/sujet2.pdf" download="sujet2.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 2</a></li>
-                    </ul>
-                    <h6>Session 2</h6>
-                    <ul>
-                        <li><a href="documents/2024/sujet3.pdf" download="sujet3.pdf"><i class="fas fa-file-pdf"></i> Télécharger  sujet 3</a></li>
-                        <li><a href="documents/2024/sujet4.pdf" download="sujet4.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 4</a></li>
-                    </ul>
-                </article>
-
-                <!-- Semestre 2 -->
-                <article id="semestre2_2024">
-                    <h3>Semestre 2</h3>
-                    <h6>Session 1</h6>
-                    <ul>
-                        <li><a href="documents/2024/sujet3.pdf" download="sujet3.pdf"><i class="fas fa-file-pdf"></i> Télécharger  sujet 3</a></li>
-                        <li><a href="documents/2024/sujet4.pdf" download="sujet4.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 4</a></li>
-                    </ul>
-                    <h6>Session 2</h6>
-                    <ul>
-                        <li><a href="documents/2024/sujet5.pdf" download="sujet5.pdf"><i class="fas fa-file-pdf"></i> Télécharger  sujet 5</a></li>
-                        <li><a href="documents/2024/sujet6.pdf" download="sujet6.pdf"><i class="fas fa-file-pdf"></i> Télécharger sujet 6</a></li>
-                    </ul>
-                </article>
-
-                
-            </section>
+                <h5>Archive cours filière Mathématique</h5>
+                   <!-- Semestre 1 -->
+                   <h3>Semestre 1</h3>
+                   <div class="documents_grid" id="documents-container">
+                       <!-- Document card 1 -->
+                       <div class="document_card">
+                           <div class="card_header">
+                               <div class="doc-icon">PDF</div>
+                               <div>Recherche opérationnelle</div>
+                           </div>
+                           <div class="card_body">
+                               <h3 class="doc-title">programmation linéaire</h3>
+                               <div class="doc-meta">Examen 2024 - Prof. Mr Tuo </div>
+                               <div class="card_actions">
+                                   <a href="documents/2022/cours1.pdf" download="cours1.pdf" class="btn btn-primary">Télécharger</a>
+                                   <button class="btn btn-outline">Aperçu</button>
+                               </div>
+                           </div>
+                       </div>
+                       <!-- Document card 2 -->
+                       <div class="document_card">
+                           <div class="card_header">
+                               <div class="doc-icon">PDF</div>
+                               <div>Topologie</div>
+                           </div>
+                           <div class="card_body">
+                               <h3 class="doc-title">Topologie</h3>
+                               <div class="doc-meta">Examen 2024 - Prof. Mr [nom]</div>
+                               <div class="card_actions">
+                                   <a href="documents/2022/cours2.pdf" download="cours2.pdf" class="btn btn-primary">Télécharger</a>
+                                   <button class="btn btn-outline">Aperçu</button>
+                               </div>
+                           </div>
+                       </div>
+                       <!-- Document card 3 -->
+                       <div class="document_card">
+                           <div class="card_header">
+                               <div class="doc-icon">PDF</div>
+                               <div>Géometrie</div>
+                           </div>
+                           <div class="card_body">
+                               <h3 class="doc-title">Géometrie</h3>
+                               <div class="doc-meta">Examen 2024 - Prof. Mr [Nom]</div>
+                               <div class="card_actions">
+                                   <a href="documents/2022/cours3.pdf" download="cours3.pdf" class="btn btn-primary">Télécharger</a>
+                                   <button class="btn btn-outline">Aperçu</button>
+                               </div>
+                           </div>
+                       </div>
+                       <!-- Document card 4 -->
+                       <div class="document_card">
+                           <div class="card_header">
+                               <div class="doc-icon">PDF</div>
+                               <div>systeme</div>
+                           </div>
+                           <div class="card_body">
+                               <h3 class="doc-title">systeme</h3>
+                               <div class="doc-meta">Examen 2024 - Prof. Mr [Nom]</div>
+                               <div class="card_actions">
+                                   <a href="documents/2022/cours4.pdf" download="cours4.pdf" class="btn btn-primary">Télécharger</a>
+                                   <button class="btn btn-outline">Aperçu</button>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                               
+   
+                   <h3>Semestre 2</h3>
+                   <div class="documents_grid" id="documents-container">
+                       <!-- Document card 1 -->
+                       <div class="document_card">
+                           <div class="card_header">
+                               <div class="doc-icon">PDF</div>
+                               <div>Examen</div>
+                           </div>
+                           <div class="card_body">
+                               <h3 class="doc-title">Examen</h3>
+                               <div class="doc-meta">Examen 2024 - Prof. Mr [nom]</div>
+                               <div class="card_actions">
+                                   <a href="documents/2022/cours1.pdf" download="cours1.pdf" class="btn btn-primary">Télécharger</a>
+                                   <button class="btn btn-outline">Aperçu</button>
+                               </div>
+                           </div>
+                       </div>
+                       <!-- Document card 2 -->
+                       <div class="document_card">
+                           <div class="card_header">
+                               <div class="doc-icon">PDF</div>
+                               <div>Examen</div>
+                           </div>
+                           <div class="card_body">
+                               <h3 class="doc-title">Examen</h3>
+                               <div class="doc-meta">Examen 2024 - Prof. Mr [nom]</div>
+                               <div class="card_actions">
+                                   <a href="documents/2022/cours2.pdf" download="cours2.pdf" class="btn btn-primary">Télécharger</a>
+                                   <button class="btn btn-outline">Aperçu</button>
+                               </div>
+                           </div>
+                       </div>
+                       <!-- Document card 3 -->
+                       <div class="document_card">
+                           <div class="card_header">
+                               <div class="doc-icon">PDF</div>
+                               <div>Examen</div>
+                           </div>
+                           <div class="card_body">
+                               <h3 class="doc-title">Examen</h3>
+                               <div class="doc-meta">Examen 2024 - Prof. Mr [nom]</div>
+                               <div class="card_actions">
+                                   <a href="documents/2022/cours3.pdf" download="cours3.pdf" class="btn btn-primary">Télécharger</a>
+                                   <button class="btn btn-outline">Aperçu</button>
+                               </div>
+                           </div>
+                       </div>
+                       <!-- Document card 4 -->
+                       <div class="document_card">
+                           <div class="card_header">
+                               <div class="doc-icon">PDF</div>
+                               <div>Examen</div>
+                           </div>
+                           <div class="card_body">
+                               <h3 class="doc-title">Examen</h3>
+                               <div class="doc-meta">Examen 2024 - Prof. Mr [nom]</div>
+                               <div class="card_actions">
+                                   <a href="documents/2022/cours4.pdf" download="cours4.pdf" class="btn btn-primary">Télécharger</a>
+                                   <button class="btn btn-outline">Aperçu</button>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                               
+   
+                   <h5>Archive cours filière Science-informatique</h5>
+                   
+                               <!-- Semestre 1 -->
+                       <h3>Semestre 1</h3>
+                   <div class="documents_grid" id="documents-container">
+                       <!-- Document card 1 -->
+                       <div class="document_card">
+                           <div class="card_header">
+                               <div class="doc-icon">PDF</div>
+                               <div>Réseaux</div>
+                           </div>
+                           <div class="card_body">
+                               <h3 class="doc-title">Protocoles TCP/IP</h3>
+                               <div class="doc-meta">Examen 2024 - Prof. Mr Konaté</div>
+                               <div class="card_actions">
+                                   <a href="documents/2022/cours1.pdf" download="cours1.pdf" class="btn btn-primary">Télécharger</a>
+                                   <button class="btn btn-outline">Aperçu</button>
+                               </div>
+                           </div>
+                       </div>
+                       <!-- Document card 2 -->
+                       <div class="document_card">
+                           <div class="card_header">
+                               <div class="doc-icon">PDF</div>
+                               <div>Génie Logiciel</div>
+                           </div>
+                           <div class="card_body">
+                               <h3 class="doc-title">Atelier Génie Logiciel</h3>
+                               <div class="doc-meta">Examen 2024 - Prof. Mme Trey</div>
+                               <div class="card_actions">
+                                   <a href="documents/2022/cours2.pdf" download="cours2.pdf" class="btn btn-primary">Télécharger</a>
+                                   <button class="btn btn-outline">Aperçu</button>
+                               </div>
+                           </div>
+                       </div>
+                       <!-- Document card 3 -->
+                       <div class="document_card">
+                           <div class="card_header">
+                               <div class="doc-icon">PDF</div>
+                               <div>Algorithmique</div>
+                           </div>
+                           <div class="card_body">
+                               <h3 class="doc-title">Algorithmique Avancée</h3>
+                               <div class="doc-meta">Examen 2024 - Prof. Mr [Nom]</div>
+                               <div class="card_actions">
+                                   <a href="documents/2022/cours3.pdf" download="cours3.pdf" class="btn btn-primary">Télécharger</a>
+                                   <button class="btn btn-outline">Aperçu</button>
+                               </div>
+                           </div>
+                       </div>
+                       <!-- Document card 4 -->
+                       <div class="document_card">
+                           <div class="card_header">
+                               <div class="doc-icon">PDF</div>
+                               <div>Base de Données</div>
+                           </div>
+                           <div class="card_body">
+                               <h3 class="doc-title">Bases de Données</h3>
+                               <div class="doc-meta">Examen 2024 - Prof. Mr [Nom]</div>
+                               <div class="card_actions">
+                                   <a href="documents/2022/cours4.pdf" download="cours4.pdf" class="btn btn-primary">Télécharger</a>
+                                   <button class="btn btn-outline">Aperçu</button>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                               
+   
+                   <h3>Semestre 2</h3>
+                   <div class="documents_grid" id="documents-container">
+                       <!-- Document card 1 -->
+                       <div class="document_card">
+                           <div class="card_header">
+                               <div class="doc-icon">PDF</div>
+                               <div>Adminstration réseaux sous linux</div>
+                           </div>
+                           <div class="card_body">
+                               <h3 class="doc-title">Adminstration réseaux sous linux</h3>
+                               <div class="doc-meta">Examen 2024 - Prof. Mr Diallo</div>
+                               <div class="card_actions">
+                                   <a href="documents/2022/cours1.pdf" download="cours1.pdf" class="btn btn-primary">Télécharger</a>
+                                   <button class="btn btn-outline">Aperçu</button>
+                               </div>
+                           </div>
+                       </div>
+                       <!-- Document card 2 -->
+                       <div class="document_card">
+                           <div class="card_header">
+                               <div class="doc-icon">PDF</div>
+                               <div>Bigdata</div>
+                           </div>
+                           <div class="card_body">
+                               <h3 class="doc-title">Bigdata</h3>
+                               <div class="doc-meta">Examen 2024 - Prof. Mr Bakayoko</div>
+                               <div class="card_actions">
+                                   <a href="documents/2022/cours2.pdf" download="cours2.pdf" class="btn btn-primary">Télécharger</a>
+                                   <button class="btn btn-outline">Aperçu</button>
+                               </div>
+                           </div>
+                       </div>
+                       <!-- Document card 3 -->
+                       <div class="document_card">
+                           <div class="card_header">
+                               <div class="doc-icon">PDF</div>
+                               <div>Programmation web</div>
+                           </div>
+                           <div class="card_body">
+                               <h3 class="doc-title">HTML/CSS</h3>
+                               <div class="doc-meta">Examen 2024 - Prof. Mr Konaté</div>
+                               <div class="card_actions">
+                                   <a href="documents/2022/cours3.pdf" download="cours3.pdf" class="btn btn-primary">Télécharger</a>
+                                   <button class="btn btn-outline">Aperçu</button>
+                               </div>
+                           </div>
+                       </div>
+                       <!-- Document card 4 -->
+                       <div class="document_card">
+                           <div class="card_header">
+                               <div class="doc-icon">PDF</div>
+                               <div>Base de Données</div>
+                           </div>
+                           <div class="card_body">
+                               <h3 class="doc-title">Bases de Données</h3>
+                               <div class="doc-meta">Examen 2024 - Prof. Mr Bayo Mock</div>
+                               <div class="card_actions">
+                                   <a href="documents/2022/cours4.pdf" download="cours4.pdf" class="btn btn-primary">Télécharger</a>
+                                   <button class="btn btn-outline">Aperçu</button>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                               
+   
+                   <h5>Archive cours filière Mécanique</h5>
+                                    <!-- Semestre 1 -->
+                       <h3>Semestre 1</h3>
+                   <div class="documents_grid" id="documents-container">
+                       <!-- Document card 1 -->
+                       <div class="document_card">
+                           <div class="card_header">
+                               <div class="doc-icon">PDF</div>
+                               <div>Examen de ...</div>
+                           </div>
+                           <div class="card_body">
+                               <h3 class="doc-title">Examen de ...</h3>
+                               <div class="doc-meta">Examen 2024 - Prof. Mr ...</div>
+                               <div class="card_actions">
+                                   <a href="documents/2022/cours1.pdf" download="cours1.pdf" class="btn btn-primary">Télécharger</a>
+                                   <button class="btn btn-outline">Aperçu</button>
+                               </div>
+                           </div>
+                       </div>
+                       <!-- Document card 2 -->
+                       <div class="document_card">
+                           <div class="card_header">
+                               <div class="doc-icon">PDF</div>
+                               <div>Examen de ...</div>
+                           </div>
+                           <div class="card_body">
+                               <h3 class="doc-title">Examen</h3>
+                               <div class="doc-meta">Examen 2024 - Prof. Mr ...</div>
+                               <div class="card_actions">
+                                   <a href="documents/2022/cours2.pdf" download="cours2.pdf" class="btn btn-primary">Télécharger</a>
+                                   <button class="btn btn-outline">Aperçu</button>
+                               </div>
+                           </div>
+                       </div>
+                       <!-- Document card 3 -->
+                       <div class="document_card">
+                           <div class="card_header">
+                               <div class="doc-icon">PDF</div>
+                               <div>Examen de ...</div>
+                           </div>
+                           <div class="card_body">
+                               <h3 class="doc-title">Examen de ...</h3>
+                               <div class="doc-meta">Examen 2024 - Prof. Mr [Nom]</div>
+                               <div class="card_actions">
+                                   <a href="documents/2022/cours3.pdf" download="cours3.pdf" class="btn btn-primary">Télécharger</a>
+                                   <button class="btn btn-outline">Aperçu</button>
+                               </div>
+                           </div>
+                       </div>
+                       <!-- Document card 4 -->
+                       <div class="document_card">
+                           <div class="card_header">
+                               <div class="doc-icon">PDF</div>
+                               <div>Examen de ...</div>
+                           </div>
+                           <div class="card_body">
+                               <h3 class="doc-title">Examen de ...</h3>
+                               <div class="doc-meta">Examen 2024 - Prof. Mr [Nom]</div>
+                               <div class="card_actions">
+                                   <a href="documents/2022/cours4.pdf" download="cours4.pdf" class="btn btn-primary">Télécharger</a>
+                                   <button class="btn btn-outline">Aperçu</button>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                               
+   
+                   <h3>Semestre 2</h3>
+                   <div class="documents_grid" id="documents-container">
+                       <!-- Document card 1 -->
+                       <div class="document_card">
+                           <div class="card_header">
+                               <div class="doc-icon">PDF</div>
+                               <div>Examen de ...</div>
+                           </div>
+                           <div class="card_body">
+                               <h3 class="doc-title">Examen de ...</h3>
+                               <div class="doc-meta">Examen 2024 - Prof. Mr ...</div>
+                               <div class="card_actions">
+                                   <a href="documents/2022/cours1.pdf" download="cours1.pdf" class="btn btn-primary">Télécharger</a>
+                                   <button class="btn btn-outline">Aperçu</button>
+                               </div>
+                           </div>
+                       </div>
+                       <!-- Document card 2 -->
+                       <div class="document_card">
+                           <div class="card_header">
+                               <div class="doc-icon">PDF</div>
+                               <div>Examen de ...</div>
+                           </div>
+                           <div class="card_body">
+                               <h3 class="doc-title">Examen de ...</h3>
+                               <div class="doc-meta">Examen 2024 - Prof. Mr ...</div>
+                               <div class="card_actions">
+                                   <a href="documents/2022/cours2.pdf" download="cours2.pdf" class="btn btn-primary">Télécharger</a>
+                                   <button class="btn btn-outline">Aperçu</button>
+                               </div>
+                           </div>
+                       </div>
+                       <!-- Document card 3 -->
+                       <div class="document_card">
+                           <div class="card_header">
+                               <div class="doc-icon">PDF</div>
+                               <div>Exemen de ...</div>
+                           </div>
+                           <div class="card_body">
+                               <h3 class="doc-title">Examen de ...</h3>
+                               <div class="doc-meta">Examen  2024 - Prof. Mr ...</div>
+                               <div class="card_actions">
+                                   <a href="documents/2022/cours3.pdf" download="cours3.pdf" class="btn btn-primary">Télécharger</a>
+                                   <button class="btn btn-outline">Aperçu</button>
+                               </div>
+                           </div>
+                       </div>
+                       <!-- Document card 4 -->
+                       <div class="document_card">
+                           <div class="card_header">
+                               <div class="doc-icon">PDF</div>
+                               <div>Examen de ...</div>
+                           </div>
+                           <div class="card_body">
+                               <h3 class="doc-title">Examen de ...</h3>
+                               <div class="doc-meta">Examen 2024 - Prof. Mr ...</div>
+                               <div class="card_actions">
+                                   <a href="documents/2022/cours4.pdf" download="cours4.pdf" class="btn btn-primary">Télécharger</a>
+                                   <button class="btn btn-outline">Aperçu</button>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
         </div>
-            <aside class="sidebar">
+        <aside class="sidebar">
                 <img src="./ressource/image_info.jpeg" alt=""><br><br>
                 <p>"Chers étudiants en mathématiques et informatique, votre persévérance face aux défis forge non seulement votre esprit,
                      mais aussi l'avenir. Chaque équation résolue, chaque ligne de code écrite est une victoire. Continuez à explorer,
@@ -412,7 +1315,9 @@ document.getElementById('ajouterSujetForm').addEventListener('submit', function(
                      n'oubliez jamais que vos efforts d'aujourd'hui construisent les solutions de demain.
                       Les nombres et les algorithmes sont vos outils pour repousser les limites du possible.
                      Restez curieux, audacieux et confiants – vous êtes les architectes d'un futur brillant !"</p>
-            </aside>
+        </aside>
+
+        
 
     </main>
     <footer>

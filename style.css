@@ -76,14 +76,14 @@ header, main,footer {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 4rem;
-    transform: translateX(-50%); /* Déplace le titre complètement à gauche (hors de l'écran) */
-    transition: transform 6s ease; /* Animation de 1 seconde */
+    transform: translateX(0); /* Déplace le titre complètement à gauche (hors de l'écran) */
+    transition: transform 6s ease; /* Animation de 6 seconde */
    
 }
 
 /* Effet de transition au survol de l'header */
 header:hover h1 {
-  transform: translateX(0); /* Ramène le titre à sa position d'origine */
+  transform: translateX(-50%); /* Ramène le titre à sa position d'origine */
 }
     
     
